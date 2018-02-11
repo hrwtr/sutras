@@ -10,7 +10,7 @@ curl
 -F 'username='$USER         # フォームからファイルのアップロード（-Fもしくは--form）
 -F 'password'=$PASS 
 -v                          # 詳細をログ出力（-vもしくは--verbose）
---url　${HUE_AUTH_URL}      #   
+--url                       #   
 ``` 
 
 #### Get dto list
