@@ -4,7 +4,7 @@
 ###  sar (System Admin Reporter)
 
 <pre>$ sar -P ALL 1
-Linux 4.15.0-30-generic (hiura-desktop) 	2018年08月12日 	_x86_64_	(12 CPU)
+Linux 4.15.0-30-generic (user-desktop) 	2018年08月12日 	_x86_64_	(12 CPU)
 
 14時45分13秒     CPU     %user     %nice   %system   %iowait    %steal     %idle
 14時45分14秒<font color="#4E9A06">     all</font><font color="#729FCF"><b>      1.17      6.76      0.58</b></font><font color="#3465A4">      0.00      0.00</font><font color="#EF2929"><b>     91.49</b></font>
@@ -144,7 +144,7 @@ ffffffffff600000-ffffffffff601000 r-xp 00000000 00:00 0                  [vsysca
 ### スケジューラ
 * 1つのCPU上で同時に処理するプロセスは１つだけ
 * 複数プロセスが実行可能な場合、個々のプロセスを適当な長さの時間（タイムスライス）ごとにCPU上で順番に処理する
-* 論理CPU上で動作するプロセスが切り替わることを「コンテキスイッチ」と呼ぶ
+* 論理CPU上で動作するプロセスが切り替わることを「コンテキストスイッチ」と呼ぶ
 * 各プロセスの状態は`ps ax`の第3フィールドである`STAT`を見る  
 
     | STATフィールドの1文字目 | 状態 |
